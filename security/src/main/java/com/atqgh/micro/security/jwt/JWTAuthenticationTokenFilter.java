@@ -43,6 +43,7 @@ public class JWTAuthenticationTokenFilter extends BasicAuthenticationFilter {
         String tokenHeader = request.getHeader(JWTConfig.tokenHeader);
         if (null != tokenHeader && tokenHeader.startsWith(JWTConfig.tokenPrefix)) {
             try {
+
                 // 截取JWT前缀
                 String token = tokenHeader.replace(JWTConfig.tokenPrefix, "");
                 // 解析JWT
