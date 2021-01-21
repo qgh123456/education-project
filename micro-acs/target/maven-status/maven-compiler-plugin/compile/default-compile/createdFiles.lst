@@ -1,0 +1,5 @@
+com\atqgh\micro\test\controller\CategoryController.class
+com\atqgh\micro\test\service\CategoryService.class
+com\atqgh\micro\test\mapper\CategoryMapper.class
+com\atqgh\micro\MicroAcsApplication.class
+com\atqgh\micro\test\service\Impl\CategoryServiceImpl.class

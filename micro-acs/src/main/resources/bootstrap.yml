@@ -1,0 +1,13 @@
+#server:
+#  port: 8280
+#  servlet:
+#    context-path: /acs
+#spring:
+#  application:
+#    name: micro-service-acs
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 47.98.136.239:8848
+#        namespace: d8c58db5-fae5-4caa-9270-5d661a133a1c
+#        file-extension: yml  # 默认找服务名.properties文件

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="884930c2-9af2-47bb-9531-a55b8303c370" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="education-project" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="@Aspect" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/micro-acs/src/main/resources/bootstrap.yml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/security/src/main/java/com/atqgh/micro/security/mapper/xml/SecMenuMapper.xml" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/program/maven/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\program\maven\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hP3qJlDJ26jJagmPrRtK7fxLro" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/micro-core/src/main/java/com/atqgh/micro/core/aspect" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atqgh.micro.common.util" />
+      <recent name="com.atqgh.micro.acs.aspect" />
+      <recent name="com.atqgh.micro.core.annotation" />
+      <recent name="com.atqgh.micro.common.aspect" />
+      <recent name="com.atqgh.micro.common.handler" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\springcloud_space\education-project\micro-core\src\main\java\com\atqgh\micro\core\aspect" />
+      <recent name="E:\springcloud_space\education-project\common\src\main\java\com\atqgh\micro\common\util" />
+      <recent name="E:\springcloud_space\education-project\micro-acs\src\main\java\com\atqgh\micro\test\controller" />
+      <recent name="E:\springcloud_space\education-project\micro-acs\src\main\java\com\atqgh\micro\test\service\Impl" />
+      <recent name="E:\springcloud_space\education-project\micro-acs\src\main\java\com\atqgh\micro\test\service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MicroAcsApplication">
+    <configuration name="CodeGenerator.genCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="micro-acs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atqgh.micro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atqgh.micro" />
+      <option name="MAIN_CLASS_NAME" value="com.atqgh.micro.CodeGenerator" />
+      <option name="METHOD_NAME" value="genCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroAcsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="micro-acs" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atqgh.micro.MicroAcsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.CodeGenerator.genCode" />
+      <item itemvalue="Spring Boot.MicroAcsApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CodeGenerator.genCode" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.19057377" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\MI\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="884930c2-9af2-47bb-9531-a55b8303c370" name="Default Changelist" comment="" />
+      <created>1599899089523</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599899089523</updated>
+      <workItem from="1599899092295" duration="21027000" />
+      <workItem from="1600049522748" duration="152000" />
+      <workItem from="1600178178892" duration="2174000" />
+      <workItem from="1600228843647" duration="2222000" />
+      <workItem from="1600258233882" duration="8143000" />
+      <workItem from="1600482797442" duration="17530000" />
+      <workItem from="1600949844444" duration="1829000" />
+      <workItem from="1601044536316" duration="8660000" />
+      <workItem from="1601299230355" duration="1078000" />
+      <workItem from="1601361693387" duration="7206000" />
+      <workItem from="1601428667393" duration="3166000" />
+      <workItem from="1601464352374" duration="1410000" />
+      <workItem from="1601557471716" duration="499000" />
+      <workItem from="1601801529061" duration="7840000" />
+      <workItem from="1601822895144" duration="57000" />
+      <workItem from="1601823001180" duration="18649000" />
+      <workItem from="1602144112089" duration="9412000" />
+      <workItem from="1602205337408" duration="8913000" />
+      <workItem from="1602246340038" duration="1338000" />
+      <workItem from="1602253775844" duration="5036000" />
+      <workItem from="1602376957989" duration="15501000" />
+      <workItem from="1602510178432" duration="5282000" />
+      <workItem from="1602649622426" duration="8014000" />
+      <workItem from="1602683608973" duration="7972000" />
+      <workItem from="1602856713089" duration="1931000" />
+      <workItem from="1603031736441" duration="2129000" />
+      <workItem from="1603117265429" duration="3608000" />
+      <workItem from="1603698409711" duration="5126000" />
+      <workItem from="1603949488988" duration="19000" />
+      <workItem from="1604047555909" duration="2610000" />
+      <workItem from="1604133199118" duration="4981000" />
+      <workItem from="1604365385587" duration="12597000" />
+      <workItem from="1604454757997" duration="4049000" />
+      <workItem from="1604538647045" duration="11760000" />
+      <workItem from="1604575860331" duration="6946000" />
+      <workItem from="1604663621186" duration="1527000" />
+      <workItem from="1605269108274" duration="65000" />
+      <workItem from="1605269680609" duration="688000" />
+      <workItem from="1605405584099" duration="88000" />
+      <workItem from="1605405693094" duration="9364000" />
+      <workItem from="1605489200618" duration="42270000" />
+      <workItem from="1609216346191" duration="592000" />
+      <workItem from="1609220492857" duration="54000" />
+      <workItem from="1610597681696" duration="1050000" />
+      <workItem from="1610779294663" duration="115000" />
+      <workItem from="1610875508599" duration="138000" />
+      <workItem from="1611051523954" duration="694000" />
+      <workItem from="1611061875819" duration="682000" />
+      <workItem from="1611211989321" duration="3025000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605430123778">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605430123778" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1604383248365">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604383248365" />
+    <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1604569691391">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1604569691391" />
+    <state width="466" height="466" key="DebuggerActiveHint" timestamp="1605593759101">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="466" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1605593759101" />
+    <state width="1184" height="283" key="GridCell.Tab.0.bottom" timestamp="1611223236259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611223236259" />
+    <state width="1184" height="283" key="GridCell.Tab.0.center" timestamp="1611223236259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611223236259" />
+    <state width="1184" height="283" key="GridCell.Tab.0.left" timestamp="1611223236259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611223236259" />
+    <state width="1184" height="283" key="GridCell.Tab.0.right" timestamp="1611223236259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611223236259" />
+    <state width="1184" height="283" key="GridCell.Tab.1.bottom" timestamp="1611223236260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611223236260" />
+    <state width="1184" height="283" key="GridCell.Tab.1.center" timestamp="1611223236259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1611223236259" />
+    <state width="1184" height="283" key="GridCell.Tab.1.left" timestamp="1611223236259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1611223236259" />
+    <state width="1184" height="283" key="GridCell.Tab.1.right" timestamp="1611223236259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1611223236259" />
+    <state width="1184" height="283" key="GridCell.Tab.2.bottom" timestamp="1611223236260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611223236260" />
+    <state width="1184" height="283" key="GridCell.Tab.2.center" timestamp="1611223236260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1611223236260" />
+    <state width="1184" height="283" key="GridCell.Tab.2.left" timestamp="1611223236260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1611223236260" />
+    <state width="1184" height="283" key="GridCell.Tab.2.right" timestamp="1611223236260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1184" height="283" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1611223236260" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605592839283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1605592839283" />
+    <state x="457" y="167" width="621" height="490" key="find.popup" timestamp="1605593238043">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="457" y="167" width="621" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605593238043" />
+    <state x="274" y="211" key="new project wizard" timestamp="1604569757469">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="274" y="211" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604569757469" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605414270009">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605414270009" />
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1611222830338">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611222830338" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/atqgh/micro/security/handler/UserAuthAccessDeniedHandler.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java</url>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/atqgh/micro/security/handler/UserLoginSuccessHandler.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/atqgh/micro/security/jwt/JWTAuthenticationTokenFilter.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security/src/main/java/com/atqgh/micro/security/jwt/JWTAuthenticationTokenFilter.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

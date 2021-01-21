@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atqgh.micro.security.mapper.SecRoleMapper">
+
+
+    <select id="selectRoleByUserId" parameterType="java.lang.Long" resultType="com.atqgh.micro.acsApi.entity.Role">
+        select
+            sr.role_id as roleId,
+            sr.role_key as roleKey,
+            sr.role_name as roleName,
+            sr.remark as remark,
+            sr.del_flag as delFlag
+        from
+            sys_user_role sur
+        inner join
+            sys_role sr
+        on
+            sur.role_id = sr.role_id
+        where sur.user_id = #{userId}
+    </select>
+
+</mapper>

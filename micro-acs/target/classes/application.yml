@@ -1,0 +1,75 @@
+spring:
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 47.98.136.239:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.98.136.239:3310/my_project?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      pool-name=HikariPool: HikariPool
+      maximum-pool-size: 12
+      connection-timeout: 60000
+      minimum-idle: 10
+      idle-timeout: 500000
+      max-lifetime: 540000
+      connection-test-query: SELECT 1
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  aop:
+    auto: true
+
+  redis:
+    database: 0
+    lettuce:
+      pool:
+        max-active: 256
+        max-wait: 30000
+        max-idle: 64
+        min-idle: 32
+      shutdown-timeout: 100ms
+    password: 920619
+    sentinel:
+      master: mymaster
+      nodes: 47.98.136.239:26379,47.98.136.239:26380,47.98.136.239:26381
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/atqgh/micro/acs/mapper/xml/*.xml,classpath:com/atqgh/micro/security/mapper/xml/*.xml,classpath:com/atqgh/micro/test/mapper/xml/*.xml
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+
+# logging:
+#   level:
+#     root: debug
+
+#在控制台上打印sql语句
+# mybatis-plus:
+#   configuration:
+#     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# JWT配置
+jwt:
+  # 密匙KEY
+  secret: JWTSecret
+  # HeaderKEY
+  tokenHeader: Authorization
+  # Token前缀字符
+  tokenPrefix: Sans-
+  # 过期时间 单位秒 1天后过期=86400 7天后过期=604800
+  expiration: 86400
+  # 配置不需要认证的接口
+  antMatchers: /index/**,/login/**,/favicon.ico
+server:
+  port: 8280
+  servlet:
+    context-path: /acs
