@@ -38,4 +38,14 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
 
     }
 
+    @Override
+    public List<Category> getListCategory(String categoryName) {
+
+        // 构建查询条件
+        QueryWrapper<Category> queryWrapper = new QueryWrapper<>();
+        queryWrapper.like("name",categoryName);
+        List<Category> categories = categoryMapper.selectList(queryWrapper);
+        return categories;
+    }
+
 }

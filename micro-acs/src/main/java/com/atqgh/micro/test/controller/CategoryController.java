@@ -11,6 +11,7 @@ import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -56,7 +57,7 @@ public class CategoryController {
     @ApiOperation(value = "删除分类")
     @DeleteMapping("/deleteCategory/{id}")
     public Result<Category> deleteCategory(@ApiParam(name = "id", value = "主键", required = true)
-                                           @PathVariable(value = "id") Long id){
+                                           @PathVariable(value = "id") String id){
 
         // 删除
         categoryService.removeById(id);
@@ -84,13 +85,15 @@ public class CategoryController {
         return Result.ok().data(category);
     }
 
-    @RequestMapping("/a")
-    @OpLog
-    public String a(){
-        String str = null;
-        str.substring(0);
-        return "ssss";
+    @ApiOperation(value = "获取所有的分页列表")
+    @PostMapping("/getListCategory")
+    public Result<Category> getListCategory(@RequestParam(value = "categoryName") String categoryName){
+
+       List<Category> categoryList = this.categoryService.getListCategory(categoryName);
+       return Result.ok().data(categoryList);
     }
+
+
 
 }
 

@@ -5,6 +5,8 @@ import com.atqgh.micro.common.vo.Result;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -17,4 +19,5 @@ public interface CategoryService extends IService<Category> {
 
     Result getList(Page<Category> pageParam, Category category);
 
+    List<Category> getListCategory(String categoryName);
 }
