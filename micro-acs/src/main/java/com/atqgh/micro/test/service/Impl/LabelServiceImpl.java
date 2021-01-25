@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -22,12 +23,19 @@ import org.springframework.stereotype.Service;
 @Service
 public class LabelServiceImpl extends ServiceImpl<LabelMapper, Label> implements ILabelService {
 
+    @Autowired
+    private LabelMapper labelMapper;
+
     @Override
-    public Result getList(Page<Category> pageParam, Label label) {
+    public Result getList(Page<Label> pageParam, Label label) {
 
         // 构建查询条件
-        QueryWrapper<Label> queryWrapper = new QueryWrapper<>();
+     /*   QueryWrapper<Label> queryWrapper = new QueryWrapper<>();
         queryWrapper.like(StringUtils.isNotEmpty(label.getLabelName()),"label_name",label.getLabelName());
+        labelMapper.selectPage(pageParam,queryWrapper);*/
+        Long current = (pageParam.getCurrent() - 1) * pageParam.getSize();
+        pageParam.setCurrent(current);
+        pageParam = labelMapper.getList(pageParam,label);
         return Result.ok().data(pageParam);
     }
 

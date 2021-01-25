@@ -7,5 +7,5 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 public interface ILabelService  extends IService<Label> {
-    Result getList(Page<Category> pageParam, Label label);
+    Result getList(Page<Label> pageParam, Label label);
 }

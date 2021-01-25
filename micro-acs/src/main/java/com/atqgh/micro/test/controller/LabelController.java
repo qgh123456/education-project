@@ -36,7 +36,7 @@ public class LabelController {
                                       @RequestBody Label label){
 
         //封装分页
-        Page<Category> pageParam = new Page<>(pageNo,pageSize);
+        Page<Label> pageParam = new Page<>(pageNo,pageSize);
         Result result = this.labelService.getList(pageParam,label);
         return result;
     }
