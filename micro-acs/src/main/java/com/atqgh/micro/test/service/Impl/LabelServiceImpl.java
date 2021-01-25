@@ -1,16 +1,11 @@
 package com.atqgh.micro.test.service.Impl;
 
-import com.atqgh.micro.acsApi.entity.Category;
 import com.atqgh.micro.acsApi.entity.Label;
 import com.atqgh.micro.common.vo.Result;
-import com.atqgh.micro.test.mapper.CategoryMapper;
 import com.atqgh.micro.test.mapper.LabelMapper;
-import com.atqgh.micro.test.service.CategoryService;
 import com.atqgh.micro.test.service.ILabelService;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
