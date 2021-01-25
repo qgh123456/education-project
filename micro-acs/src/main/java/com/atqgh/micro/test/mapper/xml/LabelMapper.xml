@@ -2,4 +2,22 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.atqgh.micro.test.mapper.LabelMapper">
 
+    <select id="getList" resultType="com.atqgh.micro.acsApi.entity.Label">
+        select
+            tl.id as id,
+            tl.label_name as labelName,
+            tl.category_id as categoryId,
+            tc.`name` as categoryName,
+            tl.create_by as createBy,
+            tl.create_time as createTime,
+            tl.update_by as updateBy,
+            tl.update_time as updateTime,
+            tl.del_flag as delFlag
+        from test_label tl
+        left join test_category tc on tl.category_id = tc.id
+        where tl.del_flag = '0'
+        <if test="label.labelName != null and label.labelName.length > 0">
+            and tl.label_name like concat('%',#{label.labelName},'%')
+        </if>
+    </select>
 </mapper>
