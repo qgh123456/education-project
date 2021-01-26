@@ -33,9 +33,9 @@ public class LabelController {
     @ApiOperation(value = "查询分类")
     @PostMapping("/getList/{pageNo}/{pageSize}")
     public Result getList(@ApiParam(name = "pageNo", value = "当前页码", defaultValue = "1")
-                              @PathVariable Long current,
+                              @PathVariable(value = "pageNo") Long current,
                           @ApiParam(name = "pageSize", value = "每页记录数", defaultValue = "20")
-                              @PathVariable Long size,
+                              @PathVariable(value = "pageSize") Long size,
                           @ApiParam(name = "dataItemQuery", value = "查询对象", required = false)
                                       @RequestBody Label label){
 
@@ -57,6 +57,14 @@ public class LabelController {
         // 新增
         labelService.save(label);
         return Result.ok().message("新增成功");
+    }
+
+    @ApiOperation(value = "详情")
+    @GetMapping("/selectLabelById")
+    public Result<Label> selectLabelById(@RequestParam(value = "id")String id){
+
+        Label label = labelService.getById(id);
+        return Result.ok().data(label);
     }
 
 }
