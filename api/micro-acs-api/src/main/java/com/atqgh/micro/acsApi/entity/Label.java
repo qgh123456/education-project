@@ -30,6 +30,9 @@ public class Label implements Serializable {
     @ApiModelProperty(value = "分类id")
     private String categoryId;
 
+    @TableField(exist = false)
+    private String categoryName;
+
     @ApiModelProperty(value = "标签名")
     private String labelName;
 
