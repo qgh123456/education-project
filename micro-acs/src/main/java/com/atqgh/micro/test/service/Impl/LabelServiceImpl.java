@@ -9,6 +9,10 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * @ProjectName: education-project
  * @Description:
@@ -25,12 +29,15 @@ public class LabelServiceImpl extends ServiceImpl<LabelMapper, Label> implements
     public Result getList(Page<Label> pageParam, Label label) {
 
         // 构建查询条件
-     /*   QueryWrapper<Label> queryWrapper = new QueryWrapper<>();
-        queryWrapper.like(StringUtils.isNotEmpty(label.getLabelName()),"label_name",label.getLabelName());
-        labelMapper.selectPage(pageParam,queryWrapper);*/
-        Long current = (pageParam.getCurrent() - 1) * pageParam.getSize();
-        pageParam.setCurrent(current);
-        pageParam = labelMapper.getList(pageParam,label);
+        Map<String,Long> map = new HashMap<>();
+        map.put("current",(pageParam.getCurrent() -1) * pageParam.getSize());
+        map.put("size",pageParam.getSize());
+        // 获取list集合
+        List<Label> labelList = labelMapper.getList(map,label);
+        // 获取总条数
+        Long total = labelMapper.getTotal(label);
+        pageParam.setTotal(total);
+        pageParam.setRecords(labelList);
         return Result.ok().data(pageParam);
     }
 

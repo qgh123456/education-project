@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 
 /**
  * <p>
@@ -32,7 +33,8 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
 
         // 构建查询条件
         QueryWrapper<Category> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq(StringUtils.isNotEmpty(category.getName()),"name",category.getName());
+        queryWrapper.like(StringUtils.isNotEmpty(category.getName()),"name",category.getName());
+        queryWrapper.eq(Objects.nonNull(category.getStatus()),"status",category.getStatus());
         categoryMapper.selectPage(pageParam,queryWrapper);
         return Result.ok().data(pageParam);
 
@@ -43,7 +45,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
 
         // 构建查询条件
         QueryWrapper<Category> queryWrapper = new QueryWrapper<>();
-        queryWrapper.like("name",categoryName);
+        queryWrapper.like(StringUtils.isNotEmpty(categoryName),"name",categoryName);
         List<Category> categories = categoryMapper.selectList(queryWrapper);
         return categories;
     }
