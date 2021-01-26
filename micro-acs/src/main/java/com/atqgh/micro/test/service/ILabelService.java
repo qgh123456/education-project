@@ -8,4 +8,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 public interface ILabelService  extends IService<Label> {
     Result getList(Page<Label> pageParam, Label label);
+
+    void deleteLabel(String id);
 }

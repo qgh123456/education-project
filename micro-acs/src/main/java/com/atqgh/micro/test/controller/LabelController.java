@@ -67,5 +67,22 @@ public class LabelController {
         return Result.ok().data(label);
     }
 
+    @ApiOperation(value = "删除标签")
+    @DeleteMapping("/deleteLabel")
+    public Result deleteLabel(@RequestParam(value = "id") String id){
+
+        labelService.deleteLabel(id);
+        return Result.ok().message("删除成功");
+    }
+
+    @ApiOperation(value = "修改标签")
+    @PutMapping("/updateLabel")
+    public Result<Label> updateLabel(@RequestBody Label label){
+
+        // 获取修改的主键
+        labelService.updateById(label);
+        return Result.ok();
+    }
+
 }
 

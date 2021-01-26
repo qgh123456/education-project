@@ -41,5 +41,10 @@ public class LabelServiceImpl extends ServiceImpl<LabelMapper, Label> implements
         return Result.ok().data(pageParam);
     }
 
+    @Override
+    public void deleteLabel(String id) {
+        labelMapper.deleteById(id);
+    }
+
 
 }
