@@ -81,13 +81,12 @@ public class CategoryController {
 
         // 查询详情
         Category category = categoryService.getById(id);
-
         return Result.ok().data(category);
     }
 
     @ApiOperation(value = "获取所有的分页列表")
     @PostMapping("/getListCategory")
-    public Result<Category> getListCategory(@RequestParam(value = "categoryName") String categoryName){
+    public Result<Category> getListCategory(@RequestParam(value = "categoryName",required = false) String categoryName){
 
        List<Category> categoryList = this.categoryService.getListCategory(categoryName);
        return Result.ok().data(categoryList);

@@ -19,5 +19,27 @@
         <if test="label.labelName != null and label.labelName.length > 0">
             and tl.label_name like concat('%',#{label.labelName},'%')
         </if>
+        <if test="label.id != null and label.id.length > 0">
+            and tl.id = #{label.id}
+        </if>
+        <if test="pageParam != null">
+            limit #{pageParam.current},#{pageParam.size}
+        </if>
+
+    </select>
+
+    <select id="getTotal" resultType="java.lang.Long">
+        select
+            count(tl.id)
+        from
+            test_label tl
+        left join test_category tc on tl.category_id = tc.id
+        where tl.del_flag = '0'
+        <if test="label.labelName != null and label.labelName.length > 0">
+            and tl.label_name like concat('%',#{label.labelName},'%')
+        </if>
+        <if test="label.id != null and label.id.length > 0">
+            and tl.id = #{label.id}
+        </if>
     </select>
 </mapper>

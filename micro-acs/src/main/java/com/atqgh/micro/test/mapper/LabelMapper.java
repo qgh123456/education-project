@@ -5,7 +5,12 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+import java.util.Map;
+
 public interface LabelMapper extends BaseMapper<Label> {
 
-    Page<Label> getList(@Param("pageParam") Page<Label> pageParam, @Param("label") Label label);
+    List<Label> getList(@Param("pageParam") Map<String,Long> map, @Param("label") Label label);
+
+    Long getTotal(@Param("label") Label label);
 }
